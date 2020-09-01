@@ -1,7 +1,6 @@
 node_modules
 *node_modules
 .env
-.vscode/settings.json
 
 # The following is a generic file to exclude sensitive and redundant files from your gitHub repo
 
