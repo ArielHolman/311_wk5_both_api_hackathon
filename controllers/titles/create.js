@@ -8,7 +8,7 @@ const createTitle = (req, res) => {
 
   pool.query(sql, (err, rows) => {
     if (err) return handleSQLError(res, err)
-    return res.json(rows);
+    return res.json({ newId: rows.insertId });
   })
 }
 

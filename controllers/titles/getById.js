@@ -7,8 +7,8 @@ const getTitlesByNo = (req, res) => {
   sql = mysql.format(sql, [req.params.emp_no])
 
   pool.query(sql, (err, rows) => {
-    if (err) return handleSQLError(res, err)
-    return res.json(rows);
+      if (err) return handleSQLError(res, err)
+      return res.json(rows);
   })
 }
 
